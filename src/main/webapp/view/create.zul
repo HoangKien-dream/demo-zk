@@ -1,0 +1,26 @@
+<zk>
+    <window apply="org.example.controller.UserController"
+            viewModel="@id('uc')@init('org.example.controller.UserController')"  >
+        <listbox id="listBox">
+            <listhead>
+                <listheader label="Name"/>
+                <listheader label="Phone"/>
+                <listheader label="Gender"/>
+                <listheader label="Birthday"/>
+                <listheader label="Action"/>
+            </listhead>
+          <template name="model">
+              <listitem value="${each}">
+                  <listcell label="${each.name}"/>
+                  <listcell label="${each.phone}"/>
+                  <listcell label="${each.gender}"/>
+                  <listcell label="${each.getBirthdayString()}"/>
+                  <listcell>
+                     <button>Detail</button>
+                  </listcell>
+
+              </listitem>
+          </template>
+        </listbox>
+    </window>
+</zk>

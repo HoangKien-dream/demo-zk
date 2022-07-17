@@ -1,0 +1,25 @@
+<zk>
+    <window  apply="org.example.controller.UserController">
+        <grid>
+            <rows>
+                <row>
+                    Name :
+                    <textbox id="txtName" />
+                </row>
+                <row>
+                    Phone :
+                    <textbox id="txtPhone" />
+                </row>
+                <row>
+                    Gender :
+                    <textbox id="txtGender" />
+                </row>
+                <row>
+                    Birthday :
+                    <datebox id="dateBirthday" format="yyyy-MM-dd" />
+                </row>
+            </rows>
+        </grid>
+        <button id="btnSave">Save</button>
+    </window>
+</zk>
